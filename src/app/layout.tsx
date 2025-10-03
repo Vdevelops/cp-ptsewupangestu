@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   creator: "PT Sewu Pangestu Lestari",
   publisher: "PT Sewu Pangestu Lestari",
   robots: "index, follow",
+  icons: {
+    icon: "/favicon-192x192.ico",
+    shortcut: "/favicon-192x192.ico",
+    apple: "/favicon-192x192.ico",
+  },
   openGraph: {
     type: "website",
     locale: "id_ID",
@@ -27,11 +32,20 @@ export const metadata: Metadata = {
     title: "PT Sewu Pangestu Lestari - Solusi Cleaning & Security Terpercaya",
     description: "Perusahaan terdepan dalam layanan cleaning dan security terintegrasi dengan standar internasional.",
     siteName: "PT Sewu Pangestu Lestari",
+    images: [
+      {
+        url: "/assets/images/logo/ptsewu.png",
+        width: 1200,
+        height: 630,
+        alt: "PT Sewu Pangestu Lestari Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "PT Sewu Pangestu Lestari - Solusi Cleaning & Security Terpercaya",
     description: "Perusahaan terdepan dalam layanan cleaning dan security terintegrasi dengan standar internasional.",
+    images: ["/assets/images/logo/ptsewu.png"],
   },
 };
 
@@ -42,6 +56,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
+      <head>
+        <link rel="icon" href="/favicon-192x192.ico" sizes="192x192" />
+        <link rel="shortcut icon" href="/favicon-192x192.ico" />
+        <link rel="apple-touch-icon" href="/favicon-192x192.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
