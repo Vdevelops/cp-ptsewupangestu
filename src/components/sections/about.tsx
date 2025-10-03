@@ -1,7 +1,7 @@
 "use client"
 
-import { MapPin, Phone, Building, Users, Award, Target, Eye, Star, CheckCircle, Sparkles } from 'lucide-react'
-import { companyInfo, branches } from '@/data/company-data'
+import { Building, Users, Award, Target, Eye, CheckCircle, Sparkles } from 'lucide-react'
+import { companyInfo } from '@/data/company-data'
 
 export default function About() {
   return (

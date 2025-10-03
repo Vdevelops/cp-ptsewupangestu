@@ -49,3 +49,15 @@ export interface Advantage {
   description: string
   icon: string
 }
+
+export interface ShowcaseItem {
+  id: string
+  title: string
+  description: string
+  image: string
+  category: 'project' | 'layanan'
+  details: string[]
+  client?: string
+  year?: string
+  location?: string
+}

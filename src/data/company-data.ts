@@ -1,4 +1,4 @@
-import { Service, Branch, Partner, Testimonial, ClientSegment, Advantage } from '@/types'
+import { Service, Branch, Partner, Testimonial, ClientSegment, Advantage, ShowcaseItem } from '@/types'
 
 export const companyInfo = {
   name: "PT Sewu Pangestu Lestari",
@@ -188,11 +188,111 @@ export const testimonials: Testimonial[] = [
   }
 ]
 
+export const showcaseItems: ShowcaseItem[] = [
+  {
+    id: "showcase-1",
+    title: "Gedung Perkantoran Sudirman",
+    description: "Layanan kebersihan dan keamanan terintegrasi untuk gedung perkantoran premium di kawasan Sudirman",
+    image: "/assets/images/showcase/office-building.jpg",
+    category: "project",
+    details: [
+      "Layanan kebersihan harian untuk 25 lantai",
+      "Sistem keamanan 24/7 dengan 12 personel",
+      "Maintenance rutin elevator dan fasilitas umum",
+      "Pengelolaan sampah dan daur ulang"
+    ],
+    client: "PT Maju Jaya",
+    year: "2023",
+    location: "Jakarta Selatan"
+  },
+  {
+    id: "showcase-2",
+    title: "Pabrik Industri Tangerang",
+    description: "Solusi kebersihan khusus industri dengan standar keamanan tinggi untuk fasilitas produksi",
+    image: "/assets/images/showcase/industrial-facility.jpg",
+    category: "project",
+    details: [
+      "Pembersihan area produksi dengan protokol khusus",
+      "Pengelolaan limbah industri",
+      "Keamanan perimeter 24/7",
+      "Maintenance peralatan produksi"
+    ],
+    client: "PT Industri Mandiri",
+    year: "2023",
+    location: "Tangerang"
+  },
+  {
+    id: "showcase-3",
+    title: "Kompleks Perumahan Grand Residence",
+    description: "Layanan kebersihan dan keamanan untuk kompleks perumahan premium dengan 500 unit",
+    image: "/assets/images/showcase/residential-complex.jpg",
+    category: "project",
+    details: [
+      "Kebersihan area umum dan fasilitas",
+      "Keamanan perimeter dan akses kontrol",
+      "Maintenance kolam renang dan gym",
+      "Pengelolaan sampah terpadu"
+    ],
+    client: "Grand Residence Management",
+    year: "2022",
+    location: "Jakarta Timur"
+  },
+  {
+    id: "showcase-4",
+    title: "Layanan Kebersihan Kantor",
+    description: "Paket layanan kebersihan profesional untuk kantor dengan standar internasional",
+    image: "/assets/images/showcase/office-cleaning.jpg",
+    category: "layanan",
+    details: [
+      "Pembersihan harian area kerja",
+      "Sanitasi toilet dan pantry",
+      "Pembersihan karpet dan jendela",
+      "Pengelolaan sampah kantor"
+    ],
+    client: "Berbagai Klien Korporat",
+    year: "2020-2024",
+    location: "Jakarta & Sekitarnya"
+  },
+  {
+    id: "showcase-5",
+    title: "Layanan Keamanan Terintegrasi",
+    description: "Sistem keamanan komprehensif dengan teknologi CCTV dan personel bersertifikat",
+    image: "/assets/images/showcase/security-service.jpg",
+    category: "layanan",
+    details: [
+      "Personel keamanan bersertifikat",
+      "Sistem CCTV 24/7",
+      "Akses kontrol elektronik",
+      "Emergency response team"
+    ],
+    client: "Berbagai Properti Komersial",
+    year: "2020-2024",
+    location: "Seluruh Indonesia"
+  },
+  {
+    id: "showcase-6",
+    title: "Layanan Deep Cleaning",
+    description: "Layanan pembersihan mendalam untuk fasilitas yang memerlukan standar sanitasi tinggi",
+    image: "/assets/images/showcase/deep-cleaning.jpg",
+    category: "layanan",
+    details: [
+      "Pembersihan mendalam area produksi",
+      "Sanitasi dengan teknologi UV",
+      "Pembersihan sistem HVAC",
+      "Disinfeksi area kritis"
+    ],
+    client: "Fasilitas Kesehatan & Industri",
+    year: "2021-2024",
+    location: "Jakarta & Surabaya"
+  }
+]
+
 export const navItems = [
   { title: "Home", href: "#home" },
   { title: "About Us", href: "#about" },
   { title: "Services", href: "#services" },
   { title: "Client Segments", href: "#clients" },
   { title: "Advantages", href: "#advantages" },
+  { title: "Showcase", href: "#showcase" },
   { title: "Contact", href: "#contact" }
 ]
