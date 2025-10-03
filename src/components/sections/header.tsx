@@ -35,9 +35,113 @@ export default function Header() {
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center min-h-screen py-16 lg:py-20">
+        {/* Mobile & Tablet Layout - Responsive */}
+        <div className="lg:hidden">
+          {/* Hero Content */}
+          <div className="text-center animate-fade-in-up space-y-4 py-8 sm:py-12 md:py-16">
+            {/* Tag */}
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-600 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium relative border border-blue-100">
+              <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+              </svg>
+              <span className="hidden xs:inline">Solusi Kebersihan & Keamanan Terpercaya</span>
+              <span className="xs:hidden">Solusi Terpercaya</span>
+            </div>
+
+            {/* Main Headline */}
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight leading-tight px-2">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Solusi</span>
+              <span className="text-gray-900"> Kebersihan & Keamanan</span>
+              <span className="block text-gray-900">Profesional</span>
+            </h1>
+
+            {/* Description */}
+            <div className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto px-4">
+              <p>Transformasi bisnis Anda dengan solusi kebersihan dan keamanan terintegrasi yang komprehensif. Dipercaya 500+ klien, menghadirkan keunggulan melalui inovasi dan layanan profesional berstandar internasional.</p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col xs:flex-row gap-3 pt-4 px-4">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white px-6 sm:px-8 py-3 font-medium transition-all duration-300 rounded-lg hover:scale-105 w-full xs:w-auto shadow-lg hover:shadow-xl"
+              >
+                <span className="flex items-center justify-center">
+                  Konsultasi Gratis
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border border-indigo-200 text-indigo-700 hover:bg-indigo-50 hover:border-indigo-300 px-6 sm:px-8 py-3 font-medium transition-all duration-300 rounded-lg hover:scale-105 w-full xs:w-auto shadow-md hover:shadow-lg"
+              >
+                <span className="flex items-center justify-center">
+                  Pelajari Lebih Lanjut
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </span>
+              </Button>
+            </div>
+          </div>
+
+          {/* Services Section - Responsive Grid */}
+          <div className="py-6 sm:py-8">
+            <div className="text-center mb-6 sm:mb-8">
+              <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Layanan Kami</h2>
+              <p className="text-sm text-gray-600 px-4">Solusi terintegrasi untuk kebutuhan bisnis Anda</p>
+            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4">
+              {/* Cleaning Service */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-5 shadow-lg border border-blue-200 hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex-shrink-0">
+                    <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-sm sm:text-base font-semibold text-gray-900">Layanan Kebersihan</h3>
+                    <p className="text-xs sm:text-sm text-gray-600">Pembersihan profesional dengan standar internasional</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Security Service */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-5 shadow-lg border border-blue-200 hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex-shrink-0">
+                    <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-sm sm:text-base font-semibold text-gray-900">Sistem Keamanan</h3>
+                    <p className="text-xs sm:text-sm text-gray-600">Keamanan 24/7 dengan teknologi terdepan</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Integrated Service */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-5 shadow-lg border border-blue-200 hover:shadow-xl transition-all duration-300 sm:col-span-2 lg:col-span-1">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex-shrink-0">
+                    <Users className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-sm sm:text-base font-semibold text-gray-900">Solusi Terintegrasi</h3>
+                    <p className="text-xs sm:text-sm text-gray-600">Kombinasi kebersihan dan keamanan dalam satu paket</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout - Side by Side */}
+        <div className="hidden lg:grid grid-cols-2 gap-12 items-center min-h-screen py-20">
           {/* Left Content */}
-          <div className="text-left animate-fade-in-up space-y-4 lg:space-y-5 relative">
+          <div className="text-left animate-fade-in-up space-y-5 relative">
               {/* Decorative Background Elements */}
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-indigo-200/30 rounded-full animate-pulse"></div>
               <div className="absolute top-8 -right-4 w-6 h-6 bg-cyan-300/20 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
@@ -55,7 +159,7 @@ export default function Header() {
             {/* Main Headline */}
             <div className="space-y-1 relative">
               <div className="absolute -left-2 top-0 w-1 h-8 bg-gradient-to-b from-indigo-400 to-blue-600 rounded-full"></div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+              <h1 className="text-6xl font-bold tracking-tight leading-tight">
                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Solusi</span>
                 <span className="text-gray-900"> Kebersihan & Keamanan</span>
                 <span className="block text-gray-900">Profesional</span>
@@ -69,7 +173,7 @@ export default function Header() {
               <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-cyan-300/40 rounded-full animate-pulse"></div>
             </div>
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 pt-2 relative">
+            <div className="flex flex-col sm:flex-row gap-3 pt-2 relative">
               {/* Decorative Elements for Buttons */}
               <div className="absolute -top-2 -left-2 w-3 h-3 bg-indigo-300/40 rounded-full animate-pulse"></div>
               <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-cyan-400/30 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
@@ -102,7 +206,7 @@ export default function Header() {
           </div>
 
           {/* Right Content - Elegant Creative Layout */}
-          <div className="relative animate-slide-in-right mt-8 lg:mt-0">
+          <div className="relative animate-slide-in-right">
             <div className="relative min-h-[500px] flex items-center justify-center">
               
               {/* Central Company Logo - Logo Only */}

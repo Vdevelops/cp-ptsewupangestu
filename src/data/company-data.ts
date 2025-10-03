@@ -127,18 +127,6 @@ export const partners: Partner[] = [
     website: "https://www.lionair.co.id"
   },
   {
-    id: "hotel-bali",
-    name: "Bali Hotels",
-    logo: "/assets/images/logo/ptsewu.png",
-    website: "https://www.balihotels.com"
-  },
-  {
-    id: "tour-guide",
-    name: "Professional Tour Guides",
-    logo: "/assets/images/logo/ptsewu.png",
-    website: "https://www.tourguides.com"
-  },
-  {
     id: "mandiri",
     name: "Bank Mandiri",
     logo: "/assets/images/logo/ptsewu.png",
@@ -161,6 +149,18 @@ export const partners: Partner[] = [
     name: "Pertamina",
     logo: "/assets/images/logo/ptsewu.png",
     website: "https://www.pertamina.com"
+  },
+  {
+    id: "indosat",
+    name: "Indosat Ooredoo",
+    logo: "/assets/images/logo/ptsewu.png",
+    website: "https://www.indosatooredoo.com"
+  },
+  {
+    id: "xl-axiata",
+    name: "XL Axiata",
+    logo: "/assets/images/logo/ptsewu.png",
+    website: "https://www.xl.co.id"
   }
 ]
 
