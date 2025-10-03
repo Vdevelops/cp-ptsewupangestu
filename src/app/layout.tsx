@@ -21,12 +21,9 @@ export const metadata: Metadata = {
   publisher: "PT Sewu Pangestu Lestari",
   robots: "index, follow",
   icons: {
-    icon: [
-      { url: "/favicon-192x192.ico", sizes: "192x192", type: "image/x-icon" },
-      { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" }
-    ],
-    shortcut: "/favicon-192x192.ico",
-    apple: "/favicon-192x192.ico",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   openGraph: {
     type: "website",
@@ -60,10 +57,9 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
-        <link rel="icon" href="/favicon-192x192.ico" sizes="192x192" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/favicon-192x192.ico" />
-        <link rel="apple-touch-icon" href="/favicon-192x192.ico" />
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
