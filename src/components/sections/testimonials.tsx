@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
-import { ChevronLeft, ChevronRight, Star, Quote, Users, Award, Heart } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Star, Quote, Users, Heart } from 'lucide-react'
 import { testimonials } from '@/data/company-data'
 
 export default function Testimonials() {
